@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFF8F8
+ }
+.introduction{
+    position: relative;
+}
+.introduction .shadow{
+    position: absolute;
+    width: 100%;
+    background-color: #FFF8F8;
+    height: 2%;
+    bottom: -9px;
+    z-index: 1;
+    left: 0px;
+    box-shadow: 1px 6px 14px 7px #FFF8F8;
+}
+.introduction .links ul li{
+    position: relative;
+}
+.introduction .links ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #FB4C47;
+    border-radius: 50%;
+    transition: 1s;
+    display: none;
+}
+.introduction .links ul li:first-child::after{
+    display: block;
+}
+.introduction .links ul li:hover::after{
+    display: block;
+    transition: 1s;
+}
+.introduction .links ul li:hover a{
+    color: #FB4C47 !important;
+    transition: 1s;
+}
+.corona{
+    position: relative;
+}
+.corona .complete{
+    position: absolute;
+    bottom: -140px;
+    right: 0;
+    width: 150px;
+}
+.corona .half{
+    position: absolute;
+    bottom: -100px;
+    right: 170px;
+    width: 100px;
+}
+.Contagion .parts {
+    margin: 30px 0 0 0;
+    gap: 20px;
+    align-items: stretch;
+    justify-content: end;
+    position: relative;
+}
+.Contagion .parts > img{
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+}
+.Contagion .parts .part { 
+    box-shadow: -1px 0px 5px 1px #ccc;
+    background-color: white;
+    padding: 10px 20px;
+    position: relative;
+    width: calc(100% / 3 - 50px);
+}
+.Contagion .parts .part:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: 3px;
+    background-color: #FA5652;
+    transition: 1s;
+}
+.Contagion .parts .part img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.Contagion .parts .part h5{
+    margin: 20px 0;
+}
+.istructions {
+    counter-increment: myCounter;
+  } 
+.istructions .instruct h2 {
+    position: relative;
+}
+  .istructions .instruct h2::before {
+    content: "0"counter(myCounter);
+    font-family: Arial, sans-serif;
+    left: -70px;
+    position: absolute;
+    color: #FA5652;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fa56523b;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace; 
+}
+.should{
+    position: relative;
+}
+.should .first{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 85px;
+}
+.should .second{
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    width: 130px;
+}
+.should .third{
+    position: absolute;
+    width: 75px;
+    bottom: 27%;
+    right: 25px;
+}
+.question{
+    padding: 30px 0;
+    position: relative;
+}
+.question .shadow{
+    position: absolute;
+    width: 100%;
+    background-color: #FFF8F8;
+    height: 2%;
+    top: -7px;
+    z-index: 0;
+    left: 0px;
+    box-shadow: 1px 6px 14px 17px #FFF8F8;
+}
+.question .form{
+    width: 790px;
+    height: 114px;
+    border-radius: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: auto;
+}
+.question .form input{
+    outline: 0;
+    border: 0;
+    height: 100%;
+}
+.question .form input:focus::placeholder{
+    opacity: 0;
+    transition: 1s;
+}
+.question .footer .links span{
+    text-decoration: none;
+    color:  #00402E;
+}
+.question .complete{
+    right: 0;
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+}
+.question .half{
+    position: absolute;
+    top: 0;
+    right: 125px;
+}
